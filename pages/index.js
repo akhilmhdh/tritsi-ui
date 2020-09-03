@@ -6,7 +6,9 @@ export default function Home() {
             <Head>
                 <title>Tritsi</title>
             </Head>
-            <h1>Tritsi</h1>
+            <main>
+                <h2 className="text-5xl mx-auto text-blue-500 text-center">Tritsi</h2>
+            </main>
         </div>
     );
 }
