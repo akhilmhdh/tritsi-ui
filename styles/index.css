@@ -1,6 +1,24 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
+@font-face {
+    font-family: 'Tesla';
+    src: url(../src/assets/font/TESLA.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../src/assets/font/Rubik-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Rubik Medium';
+    src: url('../src/assets/font/Rubik-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Rubik Bold';
+    src: url('../src/assets/font/Rubik-ExtraBold.ttf') format('truetype');
+}
 /* purgecss end ignore */
 @tailwind utilities;
 

@@ -8,7 +8,7 @@ const Home: React.FC = () => {
                 <title>Tritsi</title>
             </Head>
             <main>
-                <h2 className="text-5xl mx-auto text-blue-500 text-center">
+                <h2 className="text-5xl mx-auto text-blue-500 text-center font-tesla">
                     Tritsi
                 </h2>
             </main>
