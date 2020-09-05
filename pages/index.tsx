@@ -1,6 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 
+import MinimalLayout from '../src/layout/MinimalLayout';
+
+import IntroSection from '../src/pages/HomePage/IntroSection';
+
 const Home: React.FC = () => {
     return (
         <div>
@@ -8,9 +12,9 @@ const Home: React.FC = () => {
                 <title>Tritsi</title>
             </Head>
             <main>
-                <h2 className="text-5xl mx-auto text-blue-500 text-center font-tesla">
-                    Tritsi
-                </h2>
+                <MinimalLayout>
+                    <IntroSection />
+                </MinimalLayout>
             </main>
         </div>
     );
