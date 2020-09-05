@@ -2,8 +2,8 @@ import React from 'react';
 
 const IntroSection: React.FC = () => {
     return (
-        <div className="flex flex-col h-screen">
-            <div className="mt-8 ml-8 text-2xl font-rubikMed md:text-5xl md:ml-32">
+        <div className="flex flex-col h-screen md:mt-40">
+            <div className="mt-8 ml-8 text-2xl font-rubikMed md:text-5xl md:ml-32 md:mt-0 ">
                 Your personalised
                 <br />
                 skill assistant

@@ -52,7 +52,7 @@ const WhatWeDoSection: React.FC = () => {
                             }
                         `}</style>
                     </div>
-                    <div className="mt-4 w-1/2">
+                    <div className="mt-4 md:w-1/2">
                         <div className="font-rubikMed text-2xl ml-12 mt-6">
                             {el.title}
                         </div>
