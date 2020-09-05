@@ -8,6 +8,11 @@ const MinimalLayout: React.FC = ({ children }) => {
         <div>
             <Topbar />
             <main>{children}</main>
+            <style jsx>{`
+                main {
+                    padding-top: 60px;
+                }
+            `}</style>
         </div>
     );
 };
