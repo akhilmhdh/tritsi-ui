@@ -1,17 +1,26 @@
 import React from 'react';
+import { SearchIcon } from 'components/icons';
 
 // interface Props {}
 
 const TopBar: React.FC = () => {
     return (
-        <div className="absolute w-full flex flex-row items-center justify-between px-4 py-4 md:pt-8 md:px-10">
+        <div className="bg-primary absolute w-full flex flex-row items-center justify-between p-8">
             <div className="font-tesla text-base md:text-3xl">TRITSI</div>
             <div className="flex-grow" />
-            <div className="font-rubikMed font-medium hidden md:block px-4 tracking-widest">
-                ABOUT
+            <div className="font-axiforma font-bold hidden md:block px-4 tracking-widest text-xl">
+                home
             </div>
-            <div className="font-rubikMed font-medium hidden md:block px-4 tracking-widest">
-                LOGIN
+            <div className="font-axiforma font-bold hidden md:block px-4 tracking-widest text-xl">
+                careers
+            </div>
+            <div className="font-axiforma font-bold hidden md:block px-4 tracking-widest text-xl">
+                about
+            </div>
+            <div className="font-axiforma font-bold hidden md:block px-4 tracking-widest ml-4">
+                <div className="w-6 h-6">
+                    <SearchIcon />
+                </div>
             </div>
         </div>
     );
