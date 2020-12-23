@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 
-import MinimalLayout from '../src/layout/MinimalLayout';
+import MinimalLayout from '../layout/MinimalLayout';
 
-import IntroSection from '../src/pages/HomePage/IntroSection';
-import WhatWeDoSection from '../src/pages/HomePage/WhatWeDoSection';
+import IntroSection from '../views/HomePage/IntroSection';
+import WhatWeDoSection from '../views/HomePage/WhatWeDoSection';
 
 const Home: React.FC = () => {
     return (
