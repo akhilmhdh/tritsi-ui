@@ -5,7 +5,7 @@ import { SearchIcon } from 'components/icons';
 
 const TopBar: React.FC = () => {
     return (
-        <div className="bg-primary absolute w-full flex flex-row items-center justify-between p-8">
+        <div className="bg-primary w-full flex flex-row items-center justify-between p-8 z-50">
             <div className="font-tesla text-base md:text-3xl">TRITSI</div>
             <div className="flex-grow" />
             <div className="font-axiforma font-bold hidden md:block px-4 tracking-widest text-xl">

@@ -5,14 +5,9 @@ import Topbar from './components/TopBar';
 
 const MinimalLayout: React.FC = ({ children }) => {
     return (
-        <div>
+        <div className="flex flex-col">
             <Topbar />
             <main>{children}</main>
-            <style jsx>{`
-                main {
-                    padding-top: 60px;
-                }
-            `}</style>
         </div>
     );
 };
