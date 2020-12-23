@@ -3,3 +3,34 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: tesla;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/TESLA.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: axiforma;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Axiforma-Light.woff) format('woff');
+    }
+    @font-face {
+        font-family: axiforma;
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts/Axiforma-SemiBold.woff) format('woff');
+    }
+    @font-face {
+        font-family: axiforma;
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(/fonts/Axiforma-ExtraBold.woff) format('woff');
+    }
+}
