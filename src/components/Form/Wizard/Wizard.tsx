@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, {
     createContext,
     useContext,
@@ -46,14 +47,14 @@ export const Wizard = <
 
     const hookFormMethods = useForm<FormFieldType>({
         resolver: wizardStep.props.validation,
-        defaultValues: initialValues,
+        defaultValues: initialValues as any,
     });
 
     useEffect(() => {
         if (stepNumber in snapShot) {
             hookFormMethods.reset(snapShot[stepNumber]);
         } else {
-            hookFormMethods.reset(initialValues);
+            hookFormMethods.reset(initialValues as any);
         }
     }, [stepNumber]);
 
@@ -92,7 +93,7 @@ export const Wizard = <
                 <WizardContext.Provider
                     value={{ ...hookFormMethods, previousFormStep, stepNumber }}
                 >
-                    <Transition
+                    <Transition<undefined>
                         timeout={1000}
                         mountOnEnter
                         unmountOnExit
@@ -101,7 +102,10 @@ export const Wizard = <
                             nextFormStep();
                             setStateStep(true);
                         }}
-                        addEndListener={(node, done) => {
+                        addEndListener={(
+                            node: HTMLElement,
+                            done: () => void
+                        ) => {
                             if (!stateStep) {
                                 TweenMax.to(node, 0.5, {
                                     y: 0,
