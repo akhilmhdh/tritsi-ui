@@ -74,7 +74,7 @@ export const Wizard = <
         } else {
             let req = {} as UnpackNestedValue<FormFieldType>;
             for (let snap = 0; snap < totalSteps; snap++) {
-                req = { ...req, ...snapShot[snap] };
+                req = { ...req, ...snapShot.current[snap] };
             }
             return onSubmit(req);
         }

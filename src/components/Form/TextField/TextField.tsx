@@ -8,6 +8,7 @@ export type TextFieldProps = {
     variant?: 'contained';
     color?: 'primary' | 'secondary';
     placeholder?: string;
+    className?: string;
     label?: string;
     helperText?: string;
     fullWidth?: boolean;
@@ -16,13 +17,16 @@ export type TextFieldProps = {
     type?: 'text' | 'password' | 'number' | 'checkbox';
     rounded?: boolean;
     required?: boolean;
+    rows?: number;
+    multiline?: boolean;
 };
 
-export type Ref = HTMLInputElement;
+export type Ref = HTMLInputElement | HTMLTextAreaElement;
 
 const TextField = React.forwardRef<Ref, TextFieldProps>(
     (
         {
+            className,
             error,
             name,
             onChange,
@@ -35,6 +39,8 @@ const TextField = React.forwardRef<Ref, TextFieldProps>(
             label,
             helperText,
             required,
+            multiline,
+            rows = 3,
         }: TextFieldProps,
         ref
     ) => {
@@ -48,23 +54,45 @@ const TextField = React.forwardRef<Ref, TextFieldProps>(
                 helperText={helperText}
                 error={error}
             >
-                <input
-                    type={type}
-                    onChange={onChange}
-                    className={clsx(
-                        TextFieldType[variant],
-                        'block px-3 py-3 relative rounded text-sm shadow-blue outline-none focus:outline-none focus:ring focus:ring-primary',
-                        error && ' ring ring-red-600',
-                        fullWidth && 'w-full',
-                        disabled && 'bg-opacity-25 bg-gray-400',
-                        rounded && 'rounded'
-                    )}
-                    ref={ref}
-                    placeholder={placeholder}
-                    disabled={disabled}
-                    name={name}
-                    required={required}
-                />
+                {!multiline ? (
+                    <input
+                        type={type}
+                        onChange={onChange}
+                        className={clsx(
+                            TextFieldType[variant],
+                            'block px-3 py-3 relative rounded text-sm shadow-blue outline-none focus:outline-none focus:ring focus:ring-primary',
+                            error && ' ring ring-red-600',
+                            fullWidth && 'w-full',
+                            disabled && 'bg-opacity-25 bg-gray-400',
+                            rounded && 'rounded',
+                            className
+                        )}
+                        ref={ref as React.ForwardedRef<HTMLInputElement>}
+                        placeholder={placeholder}
+                        disabled={disabled}
+                        name={name}
+                        required={required}
+                    />
+                ) : (
+                    <textarea
+                        onChange={onChange}
+                        className={clsx(
+                            TextFieldType[variant],
+                            'block px-3 py-3 relative rounded text-sm shadow-blue outline-none focus:outline-none focus:ring focus:ring-primary',
+                            error && ' ring ring-red-600',
+                            fullWidth && 'w-full',
+                            disabled && 'bg-opacity-25 bg-gray-400',
+                            rounded && 'rounded',
+                            className
+                        )}
+                        ref={ref as React.ForwardedRef<HTMLTextAreaElement>}
+                        placeholder={placeholder}
+                        disabled={disabled}
+                        name={name}
+                        required={required}
+                        rows={rows}
+                    />
+                )}
             </FormFieldWrapper>
         );
     }

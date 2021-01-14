@@ -1,18 +1,27 @@
 import { Button, TextField, useWizard } from 'components';
 import React from 'react';
 
-const Step1 = (): JSX.Element => {
+const Step2 = (): JSX.Element => {
     const { register } = useWizard();
 
     return (
         <div>
-            <h1 className="py-8 w-full text-center">Let&apos;s Connect</h1>
             <TextField
-                name="email"
+                name="subject"
                 fullWidth
-                placeholder="Email*"
+                placeholder="Subject*"
                 required
                 ref={register}
+            />
+            <TextField
+                name="message"
+                fullWidth
+                placeholder="Your message..."
+                required
+                multiline
+                rows={5}
+                ref={register}
+                className="mt-8"
             />
             <div className="flex justify-center">
                 <Button
@@ -21,11 +30,11 @@ const Step1 = (): JSX.Element => {
                     type="submit"
                     className="text-white text-lg font-axiforma font-semibold px-8 py-4 rounded-lg mt-8"
                 >
-                    PROCEED
+                    SUBMIT
                 </Button>
             </div>
         </div>
     );
 };
 
-export default Step1;
+export default Step2;
