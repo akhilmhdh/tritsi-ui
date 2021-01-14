@@ -14,6 +14,8 @@ import {
     useForm,
     UnpackNestedValue,
 } from 'react-hook-form';
+import { Transition } from 'react-transition-group';
+import { TweenMax } from 'gsap';
 
 const WizardContext = createContext({});
 
@@ -38,6 +40,7 @@ export const Wizard = <
     const snapShot = useRef<Partial<FormFieldType>>({});
     const totalSteps = wizardAllSteps.length;
     const [stepNumber, setStepNumber] = useState(0);
+    const [stateStep, setStateStep] = useState(true);
     const isLastStep = stepNumber === totalSteps - 1;
     const wizardStep = wizardAllSteps[stepNumber] as React.ReactElement;
 
@@ -70,7 +73,7 @@ export const Wizard = <
         }
         snapShot.current = { ...snapShot.current, [stepNumber]: data };
         if (!isLastStep) {
-            nextFormStep();
+            setStateStep(false);
         } else {
             let req = {} as UnpackNestedValue<FormFieldType>;
             for (let snap = 0; snap < totalSteps; snap++) {
@@ -87,9 +90,30 @@ export const Wizard = <
         >
             <div className="h-full flex flex-col">
                 <WizardContext.Provider
-                    value={{ ...hookFormMethods, previousFormStep }}
+                    value={{ ...hookFormMethods, previousFormStep, stepNumber }}
                 >
-                    {wizardStep}
+                    <Transition
+                        timeout={1000}
+                        mountOnEnter
+                        unmountOnExit
+                        in={stateStep}
+                        onExited={() => {
+                            nextFormStep();
+                            setStateStep(true);
+                        }}
+                        addEndListener={(node, done) => {
+                            if (!stateStep) {
+                                TweenMax.to(node, 0.5, {
+                                    y: 0,
+                                    x: stateStep ? 0 : -200,
+                                    autoAlpha: stateStep ? 1 : 0,
+                                    onComplete: done,
+                                });
+                            }
+                        }}
+                    >
+                        {wizardStep}
+                    </Transition>
                 </WizardContext.Provider>
             </div>
         </form>

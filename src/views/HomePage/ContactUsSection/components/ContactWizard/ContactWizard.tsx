@@ -1,4 +1,5 @@
 import { Wizard, WizardStep } from 'components';
+import { FadeIn } from 'components/Animation';
 import Step1 from './Step1';
 import Step2 from './Step2';
 
@@ -13,10 +14,15 @@ const ContactWizard = (): JSX.Element => {
                     }}
                 >
                     <WizardStep>
-                        <Step1 />
+                        <FadeIn delay={0}>
+                            <Step1 />
+                        </FadeIn>
                     </WizardStep>
+
                     <WizardStep>
-                        <Step2 />
+                        <FadeIn delay={0}>
+                            <Step2 />
+                        </FadeIn>
                     </WizardStep>
                 </Wizard>
             </div>
