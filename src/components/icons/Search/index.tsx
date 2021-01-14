@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 
 function SearchIcon() {
     return (
@@ -14,4 +14,4 @@ function SearchIcon() {
     );
 }
 
-export default React.memo(SearchIcon);
+export default memo(SearchIcon);

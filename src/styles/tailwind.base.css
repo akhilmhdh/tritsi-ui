@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+    hr {
+        @apply border-black mx-2 my-2;
+    }
+
     @font-face {
         font-family: tesla;
         font-style: normal;
