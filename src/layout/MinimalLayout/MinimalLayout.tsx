@@ -9,7 +9,9 @@ const MinimalLayout: React.FC = ({ children }) => {
         <div className="flex flex-col">
             <Topbar />
             <main>{children}</main>
-            <Footer />
+            <div className="primary-background">
+                <Footer />
+            </div>
         </div>
     );
 };

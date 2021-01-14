@@ -1,9 +1,9 @@
 import { Container } from 'components';
 import { LinkedinCircle, YoutubeCircle } from 'components/icons';
-import { FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
     return (
         <Container>
             <hr />

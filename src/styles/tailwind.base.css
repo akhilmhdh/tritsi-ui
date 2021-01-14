@@ -38,3 +38,9 @@
         src: url(/fonts/Axiforma-ExtraBold.woff) format('woff');
     }
 }
+
+@layer components {
+    .primary-background {
+        background: linear-gradient(180deg, #cdd3df 0%, #d7dbe6 100%);
+    }
+}

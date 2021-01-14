@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 type IconProps = {
-    className: string;
+    className?: string;
 };
 
 function YoutubeCircle({ className }: IconProps) {

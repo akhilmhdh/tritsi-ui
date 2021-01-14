@@ -5,6 +5,7 @@ import MinimalLayout from '../layout/MinimalLayout';
 
 import IntroSection from '../views/HomePage/IntroSection';
 import WhatWeDoSection from '../views/HomePage/WhatWeDoSection';
+import { ContactUsSection } from 'views/HomePage/ContactUsSection';
 
 const Home: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
                 <MinimalLayout>
                     <IntroSection />
                     <WhatWeDoSection />
+                    <ContactUsSection />
                 </MinimalLayout>
             </main>
         </div>
