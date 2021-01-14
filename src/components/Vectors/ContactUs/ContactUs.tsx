@@ -418,6 +418,12 @@ function ContactUs() {
                 svg {
                     width: inherit;
                     height: inherit;
+                    position: relative;
+                }
+                @media screen and (min-width: 720px) {
+                    svg {
+                        left: 32px;
+                    }
                 }
             `}</style>
         </>

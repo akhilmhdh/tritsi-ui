@@ -9,6 +9,9 @@
         @apply border-black mx-2 my-2;
     }
 
+    h1 {
+        @apply text-5xl font-axiforma font-bold;
+    }
     @font-face {
         font-family: tesla;
         font-style: normal;
