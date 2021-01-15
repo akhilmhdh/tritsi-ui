@@ -6,6 +6,7 @@ import {
     InsiderInsight,
     TrendForecast,
 } from 'components/Vectors';
+import { ScrollTrigger } from 'components/Animation';
 
 const data = [
     {
@@ -44,14 +45,17 @@ const WhatWeDoSection: React.FC = () => {
             {data.map((el, index, arr) => {
                 if ((index + 1) % 2 === 0) return null;
                 return (
-                    <div
+                    <ScrollTrigger
+                        delay={0}
                         key={index}
                         className="flex flex-col items-center justify-between md:items-end md:flex-row"
                     >
                         <div
                             className={clsx('flex flex-col mb-12 items-center')}
                         >
-                            <div style={{ minWidth: '240px' }}>{el.icon}</div>
+                            <div style={{ minWidth: '240px' }} id="container">
+                                {el.icon}
+                            </div>
                             <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
                                 <div className=" font-axiforma text-2xl font-bold">
                                     {el.title}
@@ -62,9 +66,7 @@ const WhatWeDoSection: React.FC = () => {
                             </div>
                         </div>
                         <div
-                            className={clsx(
-                                'flex flex-col mb-12 items-center '
-                            )}
+                            className={clsx('flex flex-col mb-12 items-center')}
                         >
                             <div style={{ minWidth: '240px' }}>
                                 {arr[index + 1].icon}
@@ -78,7 +80,7 @@ const WhatWeDoSection: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollTrigger>
                 );
             })}
         </div>

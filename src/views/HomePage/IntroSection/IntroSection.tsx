@@ -5,10 +5,7 @@ import React from 'react';
 const IntroSection: React.FC = () => {
     return (
         <Container>
-            <div
-                className="flex relative"
-                style={{ height: 'calc(100vh - 72px)' }}
-            >
+            <div className="flex relative" style={{ height: 'calc(100vh)' }}>
                 <div className="flex flex-grow flex-col justify-center items-start">
                     <div className="mb-28 ml-8 md:ml-24">
                         <div className="mb-3 text-base font-axiforma font-medium md:text-2xl text-primary">
