@@ -1,11 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import {
-    CareerCompass,
-    FutureReady,
-    InsiderInsight,
-    TrendForecast,
-} from 'components/Vectors';
+import { CareerCompass, FutureReady, InsiderInsight } from 'components/Vectors';
 import { ScrollTrigger } from 'components/Animation';
 
 const data = [
@@ -31,13 +26,15 @@ const data = [
         corrupti delectus sint`,
     },
     {
-        icon: <TrendForecast />,
+        image: '/images/future_ready.svg',
         title: 'Trend Forecast',
         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut quaerat modi ullam, reiciendis ipsa officia doloribus
         corrupti delectus sint`,
     },
 ];
+
+// trendforecast when converted to image looses its gradients
 
 const WhatWeDoSection: React.FC = () => {
     return (
@@ -53,8 +50,17 @@ const WhatWeDoSection: React.FC = () => {
                         <div
                             className={clsx('flex flex-col mb-12 items-center')}
                         >
-                            <div style={{ minWidth: '240px' }} id="container">
-                                {el.icon}
+                            <div
+                                style={{ maxWidth: '240px', width: '100%' }}
+                                id="container"
+                            >
+                                {el?.icon || (
+                                    <img
+                                        src={el?.image}
+                                        alt="logo"
+                                        style={{ maxHeight: '420px' }}
+                                    />
+                                )}
                             </div>
                             <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
                                 <div className=" font-axiforma text-2xl font-bold">
@@ -68,8 +74,13 @@ const WhatWeDoSection: React.FC = () => {
                         <div
                             className={clsx('flex flex-col mb-12 items-center')}
                         >
-                            <div style={{ minWidth: '240px' }}>
-                                {arr[index + 1].icon}
+                            <div style={{ maxWidth: '240px', width: '100%' }}>
+                                {arr[index + 1]?.icon || (
+                                    <img
+                                        src={arr[index + 1]?.image}
+                                        alt="logo"
+                                    />
+                                )}
                             </div>
                             <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
                                 <div className="font-axiforma  text-2xl font-bold">

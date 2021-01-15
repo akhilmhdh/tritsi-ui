@@ -10,7 +10,7 @@ type ContactWizardProps = {
 
 const ContactWizard: FC<ContactWizardProps> = ({ onSubmit }) => {
     return (
-        <div className="w-full h-full flex items-center justify-center custom-max-height max-w-4xl relative">
+        <div className="w-full h-full flex items-center justify-center custom-max-height max-w-4xl relative px-4">
             <div className="absolute  bg-white opacity-50 w-full h-full z-10" />
             <div className="z-20 w-full max-w-lg">
                 <Wizard

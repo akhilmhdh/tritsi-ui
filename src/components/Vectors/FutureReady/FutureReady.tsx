@@ -1690,10 +1690,6 @@ function FutureReadyVector() {
                 svg {
                     width: inherit;
                     height: inherit;
-                }
-                svg {
-                    width: inherit;
-                    height: inherit;
                     max-height: 420px;
                 }
                 #blink {
