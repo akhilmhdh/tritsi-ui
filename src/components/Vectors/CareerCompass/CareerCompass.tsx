@@ -394,6 +394,7 @@ function CareerCompass() {
                 svg {
                     width: inherit;
                     height: inherit;
+                    min-height: 260px;
                 }
             `}</style>
         </>

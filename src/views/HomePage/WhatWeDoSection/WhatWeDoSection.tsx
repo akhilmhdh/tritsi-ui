@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { CareerCompass, FutureReady } from 'components/Vectors';
+import { CareerCompass, FutureReady, TrendForecast } from 'components/Vectors';
 
 const data = [
     {
@@ -25,7 +25,7 @@ const data = [
         corrupti delectus sint`,
     },
     {
-        icon: <FutureReady />,
+        icon: <TrendForecast />,
         title: 'Trend Forecast',
         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut quaerat modi ullam, reiciendis ipsa officia doloribus
@@ -41,36 +41,34 @@ const WhatWeDoSection: React.FC = () => {
                 return (
                     <div
                         key={index}
-                        className="flex justify-between items-center"
+                        className="flex flex-col items-center justify-between md:items-end md:flex-row"
                     >
                         <div
-                            className={clsx(
-                                'flex flex-col mb-12 mt-12 md:items-center md:mt-16 md:mb-16'
-                            )}
+                            className={clsx('flex flex-col mb-12 items-center')}
                         >
-                            <div style={{ width: '240px' }}>{el.icon}</div>
-                            <div className="mt-4 md:w-2/3">
-                                <div className="font-rubikMed text-2xl ml-12 mt-6">
+                            <div style={{ minWidth: '240px' }}>{el.icon}</div>
+                            <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
+                                <div className=" font-axiforma text-2xl font-bold">
                                     {el.title}
                                 </div>
-                                <div className="font-rubik text-base ml-12 mt-2">
+                                <div className="font-axiforma text-base font-medium mt-4">
                                     {el.content}
                                 </div>
                             </div>
                         </div>
                         <div
                             className={clsx(
-                                'flex flex-col mb-12 mt-12 md:items-center md:mt-16 md:mb-16'
+                                'flex flex-col mb-12 items-center '
                             )}
                         >
-                            <div style={{ width: '240px' }}>
+                            <div style={{ minWidth: '240px' }}>
                                 {arr[index + 1].icon}
                             </div>
-                            <div className="mt-4 md:w-2/3">
-                                <div className="font-rubikMed text-2xl ml-12 mt-6">
+                            <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
+                                <div className="font-axiforma  text-2xl font-bold">
                                     {arr[index + 1].title}
                                 </div>
-                                <div className="font-rubik text-base ml-12 mt-2">
+                                <div className="font-axiforma  text-base font-medium mt-4">
                                     {arr[index + 1].content}
                                 </div>
                             </div>

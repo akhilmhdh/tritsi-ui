@@ -1669,6 +1669,12 @@ function FutureReadyVector() {
                     width: inherit;
                     height: inherit;
                 }
+                @media screen and (min-width: 720px) {
+                    svg {
+                        min-height: 400px;
+                        min-width: 320px;
+                    }
+                }
             `}</style>
         </>
     );
