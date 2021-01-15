@@ -1,6 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { CareerCompass, FutureReady, TrendForecast } from 'components/Vectors';
+import {
+    CareerCompass,
+    FutureReady,
+    InsiderInsight,
+    TrendForecast,
+} from 'components/Vectors';
 
 const data = [
     {
@@ -11,7 +16,7 @@ const data = [
         corrupti delectus sint`,
     },
     {
-        icon: <CareerCompass />,
+        icon: <InsiderInsight />,
         title: 'Insider Insight',
         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut quaerat modi ullam, reiciendis ipsa officia doloribus
