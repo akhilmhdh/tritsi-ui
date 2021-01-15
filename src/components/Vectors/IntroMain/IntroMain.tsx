@@ -1185,7 +1185,7 @@ function IntroMainVector() {
                     }
                 }
                 #mainCharacterLeftLeg {
-                    transform-origin: bottom;
+                    transform-origin: top;
                     animation: legshake 2s ease infinite alternate;
                 }
                 @keyframes legshake {

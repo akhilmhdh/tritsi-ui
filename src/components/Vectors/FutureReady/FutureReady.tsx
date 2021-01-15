@@ -145,6 +145,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M453.72 481.44l6.94-3.35V476l-6.94 3.35z"
                     transform="translate(-252.99 -390.36)"
@@ -155,6 +156,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink2"
                     fill="#52c8ec"
                     d="M450.15 486.47l-1.72.84v-2.13l1.72-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -230,6 +232,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#52c8ec"
                     d="M453.72 470.68l6.94-3.35v-2.13l-6.94 3.35z"
                     transform="translate(-252.99 -390.36)"
@@ -240,6 +243,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M450.18 475.7l-1.75.84v-2.13l1.75-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -255,6 +259,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#52c8ec"
                     d="M418.34 461.64a1.83 1.83 0 00.71.54l15 7.27a5.55 5.55 0 004.38 0l15-7.27a1.78 1.78 0 00.71-.54 1.83 1.83 0 00-.71-.54l-15-7.24a5.64 5.64 0 00-4.38 0l-15 7.27a2.33 2.33 0 00-.71.51z"
                     transform="translate(-252.99 -390.36)"
@@ -320,6 +325,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink2"
                     fill="#52c8ec"
                     d="M423.23 495.56l7-3.35v-2.12l-7 3.38z"
                     transform="translate(-252.99 -390.36)"
@@ -330,6 +336,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M419.69 500.59l-1.75.84v-2.13l1.75-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -400,16 +407,19 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink2"
                     fill="#52c8ec"
                     d="M423.23 484.83l6.94-3.36v-2.12l-6.94 3.35z"
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#f1f5fb"
                     d="M413.12 489.7l8.56-4.16v-2.09l-8.56 4.13z"
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M419.69 489.82l-1.75.84v-2.1l1.75-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -480,6 +490,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M423.23 474.06l7-3.35v-2.13l-7 3.35z"
                     transform="translate(-252.99 -390.36)"
@@ -490,6 +501,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink2"
                     fill="#52c8ec"
                     d="M419.69 479.08l-1.75.84v-2.13l1.75-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -560,6 +572,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M423.23 463.23l6.94-3.35v-2.13l-6.94 3.38z"
                     transform="translate(-252.99 -390.36)"
@@ -570,6 +583,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#52c8ec"
                     d="M419.69 468.25l-1.75.84V467l1.75-.84z"
                     transform="translate(-252.99 -390.36)"
@@ -585,6 +599,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M387.88 454.61a1.91 1.91 0 00.71.54l15 7.27a5.55 5.55 0 004.38 0l15-7.27a1.81 1.81 0 00.7-.54 1.79 1.79 0 00-.7-.54l-15-7.27a5.64 5.64 0 00-4.38 0l-15 7.27a1.65 1.65 0 00-.71.54z"
                     transform="translate(-252.99 -390.36)"
@@ -660,6 +675,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M391.12 514.2l-1.75.84v-2.13l1.75-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -980,6 +996,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M394.66 466.07l6.94-3.35v-2.1l-6.94 3.38z"
                     transform="translate(-252.99 -390.36)"
@@ -1005,6 +1022,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#52c8ec"
                     d="M359.31 457.45a1.91 1.91 0 00.71.54l15 7.27a5.55 5.55 0 004.38 0l15-7.27a1.78 1.78 0 00.71-.54 1.67 1.67 0 00-.71-.53l-15-7.24a5.55 5.55 0 00-4.38 0L360 457a1.53 1.53 0 00-.69.45z"
                     transform="translate(-252.99 -390.36)"
@@ -1170,6 +1188,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M362.25 517.4l-1.76.84v-2.13l1.76-.83z"
                     transform="translate(-252.99 -390.36)"
@@ -1255,6 +1274,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink2"
                     fill="#52c8ec"
                     d="M362.21 506.63l-1.75.84v-2.12l1.75-.84z"
                     transform="translate(-252.99 -390.36)"
@@ -1330,6 +1350,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink3"
                     fill="#52c8ec"
                     d="M365.78 490.87l6.94-3.35v-2.13l-6.94 3.35z"
                     transform="translate(-252.99 -390.36)"
@@ -1340,6 +1361,7 @@ function FutureReadyVector() {
                     transform="translate(-252.99 -390.36)"
                 ></path>
                 <path
+                    id="blink"
                     fill="#52c8ec"
                     d="M362.25 495.86l-1.76.87v-2.12l1.76-.84z"
                     transform="translate(-252.99 -390.36)"
@@ -1668,6 +1690,25 @@ function FutureReadyVector() {
                 svg {
                     width: inherit;
                     height: inherit;
+                }
+                svg {
+                    width: inherit;
+                    height: inherit;
+                    max-height: 420px;
+                }
+                #blink {
+                    animation: blink 1s steps(5, start) 1s infinite;
+                }
+                #blink2 {
+                    animation: blink 3s steps(5, start) 2s infinite;
+                }
+                #blink3 {
+                    animation: blink 4s steps(5, start) 5s infinite;
+                }
+                @keyframes blink {
+                    to {
+                        visibility: hidden;
+                    }
                 }
                 @media screen and (min-width: 720px) {
                     svg {
