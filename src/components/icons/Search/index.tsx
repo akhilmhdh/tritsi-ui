@@ -4,7 +4,7 @@ function SearchIcon() {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
             <path
-                stroke="#151627"
+                stroke="#3B3B96"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="3"
