@@ -40,7 +40,7 @@ function CareerCompass() {
                     transform="translate(-17.51 -151.06)"
                 ></path>
                 <path
-                    fill="#6b757d"
+                    fill="#dadcde"
                     d="M113.82 209.83c2.5 1 3.46 3.55 6.25 4.21 1.47-.22 2.72 0 3.31 1.4 3.6.52 6.84 1.92 10.15 3 2.21.66 2.28-.22 2-1.63-4.41-2.14-9.41-3-14.05-4.73-.51-.22-1.25-.15-1.18-1a5.87 5.87 0 01-3.82-1.48c-3-2.07-6.1-4.06-9.19-6.13-.81.07-1.62.07-2.65.15 2.79 2.07 5.44 4.07 8.09 6 .42.06.72.14 1.09.21z"
                     transform="translate(-17.51 -151.06)"
                 ></path>
@@ -405,14 +405,20 @@ function CareerCompass() {
                     height: inherit;
                 }
                 #needle {
-                    transform-origin: center center;
+                    animation: needlespin 4s ease infinite alternate;
                 }
                 @keyframes needlespin {
-                    from {
-                        transform: rotateZ(15deg);
+                    0% {
+                        transform-origin: 45% 35%;
+                        transform: rotate3d(0, 0.5, 1, -8deg);
                     }
-                    to {
-                        transform: rotateZ(-15deg);
+                    50% {
+                        transform-origin: 45% 25%;
+                        transform: rotate3d(0, 0.5, 1, 4deg);
+                    }
+                    100% {
+                        transform-origin: 45% 35%;
+                        transform: rotate3d(0, 0.5, 1, -8deg);
                     }
                 }
             `}</style>

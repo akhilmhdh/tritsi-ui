@@ -433,13 +433,7 @@ function IntroMainVector() {
                     transform="translate(86.52 -32.45)"
                     fill="#a9afea"
                 />
-                <path
-                    d="M231.47,232.27a12.46,12.46,0,0,1-.95,5.37c-.48-.14-1-.2-1.29-.34,3.25-7.44-2.65-16.3-10.9-15.1v-1.29C225.18,220.06,231.52,225,231.47,232.27Z"
-                    transform="translate(86.52 -32.45)"
-                    fill="#2d2d2d"
-                    opacity="0.11"
-                    style={{ isolation: 'isolate' }}
-                />
+
                 <path
                     d="M208.94,231.86a2.25,2.25,0,0,1-3.68,2.58C203.84,231.75,207.17,229.52,208.94,231.86Z"
                     transform="translate(86.52 -32.45)"
@@ -625,16 +619,18 @@ function IntroMainVector() {
                     transform="translate(86.52 -32.45)"
                     fill="#fff"
                 />
-                <path
-                    d="M331.61,121.22c1.3-2.15,11.51-7.63,8.72-12-2.86-3.06-8.38,4.14-8.38,4.14l-3.4,2.38Z"
-                    transform="translate(86.52 -32.45)"
-                    fill="#eea78e"
-                />
-                <path
-                    d="M285.12,122.72c-2.5,2-6,13.59,9.6,14.62,0,0,18.51,9,23,3.4S335,121.29,335,121.29l-7.42-7.68-15.11,16C305.5,127.32,293.29,115.91,285.12,122.72Z"
-                    transform="translate(86.52 -32.45)"
-                    fill="#2f2e41"
-                />
+                <g id="presentation_hand">
+                    <path
+                        d="M331.61,121.22c1.3-2.15,11.51-7.63,8.72-12-2.86-3.06-8.38,4.14-8.38,4.14l-3.4,2.38Z"
+                        transform="translate(86.52 -32.45)"
+                        fill="#eea78e"
+                    />
+                    <path
+                        d="M285.12,122.72c-2.5,2-6,13.59,9.6,14.62,0,0,18.51,9,23,3.4S335,121.29,335,121.29l-7.42-7.68-15.11,16C305.5,127.32,293.29,115.91,285.12,122.72Z"
+                        transform="translate(86.52 -32.45)"
+                        fill="#2f2e41"
+                    />
+                </g>
                 <path
                     d="M275.59,175.76,271.23,192c.58.93,1.7,1.47,1.5,2.59a5.42,5.42,0,0,1,.61.68l5.45-19.66h-3.2Z"
                     transform="translate(86.52 -32.45)"
@@ -1208,6 +1204,18 @@ function IntroMainVector() {
                     }
                     to {
                         transform: rotateX(-5deg);
+                    }
+                }
+                #presentation_hand{
+                    transform-origin: center bottom;
+                    animation: presentation_hand_handshake 2s ease infinite alternate;
+                }
+                @keyframes presentation_hand_handshake {
+                    from {
+                        transform: translate(-46px,-6px) rotateZ(7deg);
+                    }
+                    to {
+                        transform: translate(-45px,-5px) rotateZ(7.2deg);
                     }
                 }
             `}</style>

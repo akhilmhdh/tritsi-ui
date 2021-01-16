@@ -28,6 +28,8 @@ const FactsSection = (): JSX.Element => {
                     slidesPerView="auto"
                     spaceBetween={50}
                     centeredSlides
+                    loop
+                    loopedSlides={3}
                     breakpoints={{
                         720: {
                             slidesPerView: 'auto',

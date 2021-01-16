@@ -1,12 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
-import { FutureReady, InsiderInsight } from 'components/Vectors';
+import { FutureReady, InsiderInsight, CareerCompass } from 'components/Vectors';
 import { ScrollTrigger } from 'components/Animation';
 import { Typography } from 'components';
 
 const data = [
     {
-        image: '/images/compass.svg',
+        icon: <CareerCompass />,
         title: 'Your Career Compass',
         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut quaerat modi ullam, reiciendis ipsa officia doloribus
@@ -83,6 +83,7 @@ const WhatWeDoSection: React.FC = () => {
                                     <img
                                         src={arr[index + 1]?.image}
                                         alt="logo"
+                                        style={{ maxHeight: '400px' }}
                                     />
                                 )}
                             </div>
