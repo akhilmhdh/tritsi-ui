@@ -2,6 +2,21 @@ import { Container, Typography } from 'components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FactCard } from './components/FactCard';
 
+const facts = [
+    {
+        title: 'Every Job Vacancy',
+        subtitle: 'persists for a minimum of 12 weeks',
+    },
+    {
+        title: 'Every Job Vacancy',
+        subtitle: 'persists for a minimum of 12 weeks',
+    },
+    {
+        title: 'Every Job Vacancy',
+        subtitle: 'persists for a minimum of 12 weeks',
+    },
+];
+
 const FactsSection = (): JSX.Element => {
     return (
         <Container>
@@ -21,15 +36,18 @@ const FactsSection = (): JSX.Element => {
                         },
                     }}
                 >
-                    <SwiperSlide style={{ width: 'unset' }}>
-                        <FactCard />
-                    </SwiperSlide>
-                    <SwiperSlide style={{ width: 'unset' }}>
-                        <FactCard />
-                    </SwiperSlide>
-                    <SwiperSlide style={{ width: 'unset' }}>
-                        <FactCard />
-                    </SwiperSlide>
+                    {facts.map(({ title, subtitle }, index) => (
+                        <SwiperSlide
+                            style={{ width: 'unset' }}
+                            key={`fact-${index + 1}`}
+                        >
+                            <FactCard
+                                cardNumber={index + 1}
+                                title={title}
+                                subtitle={subtitle}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </Container>
