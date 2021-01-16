@@ -5,7 +5,7 @@ const cardLinearGradience = [
 
     'linear-gradient(180deg, #DF532A 34.91%, rgba(218, 91, 54, 0.74) 100%)',
 
-    'linear-gradient(180deg, #062540 12.07%, rgba(26, 66, 100, 0.83) 100%);',
+    'linear-gradient(180deg, #062540 12.07%, rgba(26, 66, 100, 0.83) 100%)',
 ];
 
 type FactCardProps = {
