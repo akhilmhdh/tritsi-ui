@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { FutureReady, InsiderInsight } from 'components/Vectors';
 import { ScrollTrigger } from 'components/Animation';
+import { Typography } from 'components';
 
 const data = [
     {
@@ -39,6 +40,9 @@ const data = [
 const WhatWeDoSection: React.FC = () => {
     return (
         <div className="container mx-auto my-12 pt-12 ">
+            <Typography variant="sectionTitle" className="mb-24">
+                What We Do
+            </Typography>
             {data.map((el, index, arr) => {
                 if ((index + 1) % 2 === 0) return null;
                 return (

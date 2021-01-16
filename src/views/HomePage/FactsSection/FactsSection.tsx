@@ -1,4 +1,4 @@
-import { Container } from 'components';
+import { Container, Typography } from 'components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const cardLinearGradience = [
@@ -15,9 +15,8 @@ const FactsSection = (): JSX.Element => {
             <div
                 className="w-full max-w-md shadow-card rounded-xl p-8"
                 style={{
-                    maxHeight: '400px',
-                    height: '100%',
-
+                    height: '300px',
+                    width: '300px',
                     background: cardLinearGradience[0],
                 }}
             >
@@ -41,15 +40,31 @@ const FactsSection = (): JSX.Element => {
 
     return (
         <Container>
-            <div className="h-screen py-16 px-8">
+            <Typography variant="sectionTitle" className="mb-24">
+                Findings
+            </Typography>
+            <div className="pb-16 md:px-8">
                 <Swiper
-                    slidesPerView={2}
-                    spaceBetween={100}
-                    className="w-full h-full"
+                    slidesPerView="auto"
+                    spaceBetween={50}
+                    centeredSlides
+                    breakpoints={{
+                        720: {
+                            slidesPerView: 3,
+                            spaceBetween: 100,
+                            centeredSlides: false,
+                        },
+                    }}
                 >
-                    <SwiperSlide>{FactCard}</SwiperSlide>
-                    <SwiperSlide>{FactCard}</SwiperSlide>
-                    <SwiperSlide>{FactCard}</SwiperSlide>
+                    <SwiperSlide style={{ width: 'unset' }}>
+                        {FactCard}
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: 'unset' }}>
+                        {FactCard}
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: 'unset' }}>
+                        {FactCard}
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </Container>
