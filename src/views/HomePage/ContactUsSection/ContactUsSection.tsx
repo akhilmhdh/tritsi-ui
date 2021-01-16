@@ -11,7 +11,7 @@ const ContactUsSection = (): JSX.Element => {
     };
 
     return (
-        <div className="primary-background py-8">
+        <div className="primary-background py-8 mt-16">
             <Container>
                 <div className="contact-mobile w-full relative">
                     <ContactUs successAnimation={hideForm} />

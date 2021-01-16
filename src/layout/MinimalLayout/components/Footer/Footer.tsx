@@ -7,7 +7,7 @@ const Footer = (): JSX.Element => {
     return (
         <Container>
             <hr />
-            <div className="flex justify-between items-center py-11">
+            <div className="flex flex-col md:flex-row justify-between items-center py-11">
                 <div className="py-4">
                     <span className="font-axiforma font-medium">
                         © 2021 Tritsi. All rights reserved.

@@ -34,6 +34,13 @@
         src: url(/fonts/Axiforma-SemiBold.woff) format('woff');
     }
     @font-face {
+        font-family: sanchez;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Sanchez-Regular.ttf) format('truetype');
+    }
+    @font-face {
         font-family: axiforma;
         font-style: normal;
         font-weight: bold;

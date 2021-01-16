@@ -21,7 +21,7 @@ const Typography: FC<TypographyProps> = ({
     variant,
 }) => {
     const variantClassNames = {
-        sectionTitle: 'text-axioforma text-5xl capitalize',
+        sectionTitle: 'font-sanchez text-5xl capitalize',
     };
 
     return (

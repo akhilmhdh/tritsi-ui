@@ -66,7 +66,7 @@ const WhatWeDoSection: React.FC = () => {
                                     />
                                 )}
                             </div>
-                            <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
+                            <div className="flex flex-col items-center mt-8 px-8 md:w-4/5 md:items-start">
                                 <div className=" font-axiforma text-2xl font-bold">
                                     {el.title}
                                 </div>
@@ -86,7 +86,7 @@ const WhatWeDoSection: React.FC = () => {
                                     />
                                 )}
                             </div>
-                            <div className="flex flex-col items-center mt-4 px-8 md:w-4/5 md:items-start">
+                            <div className="flex flex-col items-center mt-8 px-8 md:w-4/5 md:items-start">
                                 <div className="font-axiforma  text-2xl font-bold">
                                     {arr[index + 1].title}
                                 </div>

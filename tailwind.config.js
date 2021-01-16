@@ -5,6 +5,7 @@ module.exports = {
         fontFamily: {
             tesla: ['tesla', 'sans-serif'],
             axiforma: ['axiforma', 'sans-serif'],
+            sanchez: ['sanchez', 'sans-serif'],
         },
         extend: {
             colors: {
