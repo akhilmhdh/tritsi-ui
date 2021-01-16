@@ -16,6 +16,7 @@ module.exports = {
             },
             boxShadow: {
                 blue: '3px 4px 4px rgba(93, 140, 211, 0.77)',
+                paper: '0 70px 140px 0 rgba(130,136,171,.2)',
             },
         },
     },

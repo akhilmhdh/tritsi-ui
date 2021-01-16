@@ -3,9 +3,10 @@ import Head from 'next/head';
 
 import MinimalLayout from '../layout/MinimalLayout';
 
-import IntroSection from '../views/HomePage/IntroSection';
-import WhatWeDoSection from '../views/HomePage/WhatWeDoSection';
+import IntroSection from 'views/HomePage/IntroSection';
+import WhatWeDoSection from 'views/HomePage/WhatWeDoSection';
 import { ContactUsSection } from 'views/HomePage/ContactUsSection';
+import { FactsSection } from 'views/HomePage/FactsSection';
 
 const Home: React.FC = () => {
     return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
                 <MinimalLayout>
                     <IntroSection />
                     <WhatWeDoSection />
+                    <FactsSection />
                     <ContactUsSection />
                 </MinimalLayout>
             </main>
