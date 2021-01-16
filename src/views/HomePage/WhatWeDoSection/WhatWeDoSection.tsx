@@ -38,7 +38,7 @@ const data = [
 
 const WhatWeDoSection: React.FC = () => {
     return (
-        <div className="container mx-auto mt-12">
+        <div className="container mx-auto my-12 pt-12 ">
             {data.map((el, index, arr) => {
                 if ((index + 1) % 2 === 0) return null;
                 return (

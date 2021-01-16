@@ -21,14 +21,14 @@ const IntroSection: React.FC = () => {
                         <div className="mb-3 text-base font-axiforma font-medium md:text-2xl text-primary">
                             Climb your career ladder with
                         </div>
-                        <div className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-5xl">
+                        <div className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-6xl">
                             Your personalised
                         </div>
-                        <h1 className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-5xl">
+                        <h1 className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-6xl">
                             skill assistant
                         </h1>
                         <Button
-                            className="text-white mt-8 px-12"
+                            className="text-white mt-8 md:mt-16 px-12"
                             rounded
                             onClick={scrollToBottom}
                         >
@@ -38,7 +38,7 @@ const IntroSection: React.FC = () => {
                 </div>
                 <div
                     style={{ maxWidth: '640px' }}
-                    className="w-full absolute bottom-0 right-0"
+                    className="w-full absolute bottom-0 md:bottom-12 right-0"
                 >
                     <IntroMain />
                 </div>
