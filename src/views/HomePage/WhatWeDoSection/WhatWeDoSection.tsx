@@ -1,11 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { CareerCompass, FutureReady, InsiderInsight } from 'components/Vectors';
+import { FutureReady, InsiderInsight } from 'components/Vectors';
 import { ScrollTrigger } from 'components/Animation';
 
 const data = [
     {
-        icon: <CareerCompass />,
+        image: '/images/compass.svg',
         title: 'Your Career Compass',
         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut quaerat modi ullam, reiciendis ipsa officia doloribus
