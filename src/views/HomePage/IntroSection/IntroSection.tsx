@@ -18,15 +18,16 @@ const IntroSection: React.FC = () => {
             >
                 <div className="flex flex-grow flex-col justify-center items-start">
                     <div className="mb-28 ml-8 md:ml-24">
-                        <div className="mb-3 text-base font-axiforma font-medium md:text-2xl text-primary">
-                            Climb your career ladder with
-                        </div>
                         <div className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-6xl">
                             Your personalised
                         </div>
                         <h1 className="mt-4 text-2xl font-axiforma font-bold leading-8 md:text-6xl">
                             skill assistant
                         </h1>
+                        <div className="mt-3 text-base font-axiforma font-medium md:text-xl text-primary">
+                            Data-driven skill recommendations
+                            <br /> for your next job role
+                        </div>
                         <Button
                             className="text-white mt-8 md:mt-16 px-12"
                             rounded

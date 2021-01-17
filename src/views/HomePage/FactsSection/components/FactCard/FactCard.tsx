@@ -25,12 +25,15 @@ const FactCard: FC<FactCardProps> = ({ cardNumber, title, subtitle }) => {
                     ],
             }}
         >
-            <div className="font-sanchez text-2xl uppercase text-right tracking-wide">
-                {title}
+            <div
+                className="pl-16 text-right font-axiforma text-lg tracking-wider"
+                style={{ color: '#E2CCCC' }}
+            >
+                {subtitle}
             </div>
             <div className=" border-r border-white flex-grow relative right-6 my-2 max-h-16" />
-            <div className="pl-16 text-right font-axiforma text-lg relative right-5 tracking-wider">
-                {subtitle}
+            <div className="font-sanchez text-2xl uppercase text-right tracking-wider whitespace-pre-wrap relative">
+                {title}
             </div>
             <div className="w-1/2 text-9xl font-axiforma empty-text absolute bottom-4 left-8 ">
                 {cardNumber}

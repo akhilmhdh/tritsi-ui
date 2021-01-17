@@ -8,30 +8,25 @@ const data = [
     {
         icon: <CareerCompass />,
         title: 'Your Career Compass',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Ut quaerat modi ullam, reiciendis ipsa officia doloribus
-        corrupti delectus sint`,
+        content: ` Not sure of your possible career directions? 
+        Relax and let our AI-powered engine find the possible job roles for the skills you possess.`,
     },
     {
         icon: <InsiderInsight />,
         title: 'Insider Insight',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Ut quaerat modi ullam, reiciendis ipsa officia doloribus
-        corrupti delectus sint`,
+        content: `Take a seat and let our analytics and visualizations convince you of our recommendations `,
     },
     {
         icon: <FutureReady />,
         title: 'Future Ready',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Ut quaerat modi ullam, reiciendis ipsa officia doloribus
-        corrupti delectus sint`,
+        content: `Chosen your career path? 
+        We recommend the additional skills you need to achieve your dream job`,
     },
     {
         image: '/images/future_ready.svg',
         title: 'Trend Forecast',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Ut quaerat modi ullam, reiciendis ipsa officia doloribus
-        corrupti delectus sint`,
+        content: `Wanna be a step ahead in the job market? 
+        You might wanna take a look at our skill demand predictions and forecasts`,
     },
 ];
 
@@ -49,7 +44,7 @@ const WhatWeDoSection: React.FC = () => {
                     <ScrollTrigger
                         delay={0}
                         key={index}
-                        className="flex flex-col items-center justify-between md:items-end md:flex-row"
+                        className="flex flex-col items-center justify-between md:items-end md:flex-row m-12"
                     >
                         <div
                             className={clsx('flex flex-col mb-12 items-center')}
@@ -62,7 +57,7 @@ const WhatWeDoSection: React.FC = () => {
                                     <img
                                         src={el?.image}
                                         alt="logo"
-                                        style={{ maxHeight: '420px' }}
+                                        style={{ maxHeight: '340px' }}
                                     />
                                 )}
                             </div>

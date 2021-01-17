@@ -4,16 +4,24 @@ import { FactCard } from './components/FactCard';
 
 const facts = [
     {
-        title: 'Every Job Vacancy',
-        subtitle: 'persists for a minimum of 12 weeks',
+        title: 'CAREERBUILDER\n2017',
+        subtitle:
+            '60% of the employers from the US have job openings that stay vacant for 12 weeks or longer.',
     },
     {
-        title: 'Every Job Vacancy',
-        subtitle: 'persists for a minimum of 12 weeks',
+        title: 'DELOITTE',
+        subtitle:
+            'Skill-Gap will leave behind an estimate of 2.4 Million positions between 2018 and 2028.',
     },
     {
-        title: 'Every Job Vacancy',
-        subtitle: 'persists for a minimum of 12 weeks',
+        title: 'MANPOWERGROUP',
+        subtitle:
+            '54% of companies worldwide report talent shortage, which is the highest ever and almost as double as what it was a decade ago.',
+    },
+    {
+        title: 'WORLD ECONOMIC\nFORUM',
+        subtitle:
+            'More than half of all employees(54%) will require significant reskilling by 2022.',
     },
 ];
 
@@ -21,7 +29,7 @@ const FactsSection = (): JSX.Element => {
     return (
         <Container>
             <Typography variant="sectionTitle" className="mb-24">
-                Findings
+                Why We Exist
             </Typography>
             <div className="pb-16 md:px-8">
                 <Swiper
