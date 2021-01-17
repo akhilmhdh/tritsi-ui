@@ -8,6 +8,7 @@ const ContactUsSection = (): JSX.Element => {
 
     const onSubmit = async (): Promise<void> => {
         setHideForm(true);
+        alert('Email service will be added soon');
     };
 
     return (

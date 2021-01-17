@@ -1,11 +1,23 @@
 import { Wizard, WizardStep } from 'components';
 import { FadeIn } from 'components/Animation';
 import { FC } from 'react';
+import { object, string } from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import Step1 from './Step1';
 import Step2 from './Step2';
 
 type ContactWizardProps = {
     onSubmit: () => Promise<void>;
+};
+
+const stepValidators = {
+    step1: object().shape({
+        email: string().email().required('Email is required'),
+    }),
+    step2: object().shape({
+        subject: string().max(100).required('Subject is required'),
+        message: string().max(250),
+    }),
 };
 
 const ContactWizard: FC<ContactWizardProps> = ({ onSubmit }) => {
@@ -19,13 +31,13 @@ const ContactWizard: FC<ContactWizardProps> = ({ onSubmit }) => {
                         onSubmit();
                     }}
                 >
-                    <WizardStep>
+                    <WizardStep validation={yupResolver(stepValidators.step1)}>
                         <FadeIn delay={0}>
                             <Step1 />
                         </FadeIn>
                     </WizardStep>
 
-                    <WizardStep>
+                    <WizardStep validation={yupResolver(stepValidators.step2)}>
                         <FadeIn delay={0}>
                             <Step2 />
                         </FadeIn>

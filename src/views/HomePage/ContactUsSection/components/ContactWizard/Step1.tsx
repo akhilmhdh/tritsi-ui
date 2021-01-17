@@ -3,7 +3,7 @@ import { Button, TextField, useWizard } from 'components';
 //https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjo2J-3w5vuAhXBwjgGHU3sBjsQtwIwBnoECAsQAg&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DsmkSexNRdHw&usg=AOvVaw0BCXsvAsXpKbCHd88jpWnM
 
 const Step1 = (): JSX.Element => {
-    const { register } = useWizard();
+    const { register, errors } = useWizard();
 
     return (
         <div>
@@ -14,6 +14,8 @@ const Step1 = (): JSX.Element => {
                 placeholder="Email*"
                 required
                 ref={register}
+                error={Boolean(errors?.email?.message)}
+                helperText={errors?.email?.message || ' '}
             />
             <div className="flex justify-center">
                 <Button

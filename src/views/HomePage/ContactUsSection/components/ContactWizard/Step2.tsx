@@ -2,7 +2,7 @@ import { Button, TextField, useWizard } from 'components';
 import React from 'react';
 
 const Step2 = (): JSX.Element => {
-    const { register } = useWizard();
+    const { register, errors } = useWizard();
 
     return (
         <div>
@@ -12,6 +12,8 @@ const Step2 = (): JSX.Element => {
                 placeholder="Subject*"
                 required
                 ref={register}
+                error={Boolean(errors?.subject?.message)}
+                helperText={errors?.subject?.message || ' '}
             />
             <TextField
                 name="message"
@@ -22,6 +24,8 @@ const Step2 = (): JSX.Element => {
                 rows={5}
                 ref={register}
                 className="mt-8"
+                error={Boolean(errors?.message?.message)}
+                helperText={errors?.message?.message || ' '}
             />
             <div className="flex justify-center">
                 <Button
