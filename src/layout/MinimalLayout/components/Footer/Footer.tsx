@@ -1,6 +1,9 @@
 import { Container } from 'components';
-import { LinkedinCircle, YoutubeCircle } from 'components/icons';
-import { FaFacebook } from 'react-icons/fa';
+import {
+    InstagramCircle,
+    LinkedinCircle,
+    YoutubeCircle,
+} from 'components/icons';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 
 const Footer = (): JSX.Element => {
@@ -14,10 +17,30 @@ const Footer = (): JSX.Element => {
                     </span>
                 </div>
                 <div className="flex justify-end">
-                    <FaFacebook size={32} className="mr-5" />
-                    <AiFillTwitterCircle size={32} className="mr-5" />
-                    <LinkedinCircle className="mr-5" />
-                    <YoutubeCircle />
+                    <a
+                        href="https://www.instagram.com/teamtritsi/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <InstagramCircle className="mr-5" />
+                    </a>
+                    <a
+                        href="https://twitter.com/TTritsi"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <AiFillTwitterCircle size={32} className="mr-5" />
+                    </a>
+                    {false && (
+                        <a>
+                            <LinkedinCircle className="mr-5" />
+                        </a>
+                    )}
+                    {false && (
+                        <a>
+                            <YoutubeCircle />
+                        </a>
+                    )}
                 </div>
             </div>
         </Container>

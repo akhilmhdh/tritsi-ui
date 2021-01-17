@@ -94,7 +94,7 @@ export const Wizard = <
                     value={{ ...hookFormMethods, previousFormStep, stepNumber }}
                 >
                     <Transition<undefined>
-                        timeout={1000}
+                        timeout={500}
                         mountOnEnter
                         unmountOnExit
                         in={stateStep}

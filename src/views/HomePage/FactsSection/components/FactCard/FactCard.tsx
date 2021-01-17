@@ -12,12 +12,13 @@ type FactCardProps = {
     cardNumber: number;
     title: string;
     subtitle?: string;
+    link?: string;
 };
 
-const FactCard: FC<FactCardProps> = ({ cardNumber, title, subtitle }) => {
+const FactCard: FC<FactCardProps> = ({ cardNumber, title, subtitle, link }) => {
     return (
         <div
-            className="shadow-card rounded-xl p-8 pt-12 text-white flex flex-col relative card"
+            className="shadow-card rounded-xl p-8 pt-12 text-white card"
             style={{
                 background:
                     cardLinearGradience[
@@ -25,19 +26,28 @@ const FactCard: FC<FactCardProps> = ({ cardNumber, title, subtitle }) => {
                     ],
             }}
         >
-            <div
-                className="pl-16 text-right font-axiforma text-base sm:text-lg tracking-wider"
-                style={{ color: '#E2CCCC' }}
+            <a
+                className="w-full h-full"
+                href={link}
+                target="_blank"
+                rel="noreferrer"
             >
-                {subtitle}
-            </div>
-            <div className=" border-r border-white flex-grow relative right-6 my-2 max-h-16" />
-            <div className="font-sanchez text-xl sm:text-2xl uppercase text-right tracking-wider whitespace-pre-wrap relative">
-                {title}
-            </div>
-            <div className="w-1/2 text-9xl font-axiforma empty-text absolute bottom-4 left-8 ">
-                {cardNumber}
-            </div>
+                <div className="flex flex-col relative w-full h-full">
+                    <div
+                        className="pl-16 text-right font-axiforma text-base sm:text-lg tracking-wider"
+                        style={{ color: '#E2CCCC' }}
+                    >
+                        {subtitle}
+                    </div>
+                    <div className=" border-r border-white flex-grow relative right-6 my-2 max-h-16" />
+                    <div className="font-sanchez text-xl sm:text-2xl uppercase text-right tracking-wider whitespace-pre-wrap relative">
+                        {title}
+                    </div>
+                    <div className="w-1/2 text-9xl font-axiforma empty-text absolute bottom-4 left-8 ">
+                        {cardNumber}
+                    </div>
+                </div>
+            </a>
             <style jsx>
                 {`
                     .shadow-card {

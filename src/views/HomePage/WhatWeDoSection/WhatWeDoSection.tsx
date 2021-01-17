@@ -34,7 +34,7 @@ const data = [
 
 const WhatWeDoSection: React.FC = () => {
     return (
-        <div className="container mx-auto my-12 pt-12 ">
+        <div className="container mx-auto my-12 pt-12" id="whatWeDo">
             <Typography variant="sectionTitle" className="mb-16 md:mb-24">
                 What We Do
             </Typography>
