@@ -6,8 +6,14 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import Step1 from './Step1';
 import Step2 from './Step2';
 
+type ContactUsForm = {
+    email: string;
+    subject: string;
+    message?: string;
+};
+
 type ContactWizardProps = {
-    onSubmit: () => Promise<void>;
+    onSubmit: (arg0: ContactUsForm) => Promise<void>;
 };
 
 const stepValidators = {
@@ -25,12 +31,7 @@ const ContactWizard: FC<ContactWizardProps> = ({ onSubmit }) => {
         <div className="w-full h-full flex items-center justify-center custom-max-height max-w-4xl relative px-4">
             <div className="absolute  bg-white opacity-50 w-full h-full z-10" />
             <div className="z-20 w-full max-w-lg">
-                <Wizard
-                    onSubmit={(el) => {
-                        console.log(el);
-                        onSubmit();
-                    }}
-                >
+                <Wizard onSubmit={onSubmit}>
                     <WizardStep validation={yupResolver(stepValidators.step1)}>
                         <FadeIn delay={0}>
                             <Step1 />

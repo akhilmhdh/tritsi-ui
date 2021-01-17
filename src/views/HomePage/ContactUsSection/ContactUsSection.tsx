@@ -1,14 +1,26 @@
+import axios from 'axios';
 import { Container } from 'components';
 import { ContactUs } from 'components/Vectors';
 import { useState } from 'react';
 import { ContactWizard } from './components/ContactWizard';
 
+type ContactUsForm = {
+    email: string;
+    subject: string;
+    message?: string;
+};
+
 const ContactUsSection = (): JSX.Element => {
     const [hideForm, setHideForm] = useState(false);
 
-    const onSubmit = async (): Promise<void> => {
-        setHideForm(true);
-        alert('Email service will be added soon');
+    const onSubmit = async (formData: ContactUsForm): Promise<void> => {
+        try {
+            await axios.post('/api/email', formData);
+            setHideForm(true);
+        } catch (error) {
+            console.log(error);
+        }
+        return;
     };
 
     return (

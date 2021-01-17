@@ -2,7 +2,11 @@ import { Button, TextField, useWizard } from 'components';
 import React from 'react';
 
 const Step2 = (): JSX.Element => {
-    const { register, errors } = useWizard();
+    const {
+        register,
+        errors,
+        formState: { isSubmitting },
+    } = useWizard();
 
     return (
         <div>
@@ -32,6 +36,8 @@ const Step2 = (): JSX.Element => {
                     color="secondary"
                     rounded
                     type="submit"
+                    loading={isSubmitting}
+                    disabled={isSubmitting}
                     className="text-white text-lg font-axiforma font-semibold px-8 py-4 rounded-lg mt-8"
                 >
                     SUBMIT
