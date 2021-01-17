@@ -13,6 +13,7 @@ const Home: React.FC = () => {
         <div>
             <Head>
                 <title>Tritsi</title>
+                <link rel="icon" type="image/jpg" href="/images/logo.jpg" />
             </Head>
             <main>
                 <MinimalLayout>
