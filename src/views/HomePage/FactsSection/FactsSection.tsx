@@ -28,7 +28,7 @@ const facts = [
 const FactsSection = (): JSX.Element => {
     return (
         <Container>
-            <Typography variant="sectionTitle" className="mb-24">
+            <Typography variant="sectionTitle" className="mb-16 md:mb-24">
                 Why We Exist
             </Typography>
             <div className="pb-16 md:px-8">

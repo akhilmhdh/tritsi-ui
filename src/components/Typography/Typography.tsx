@@ -21,13 +21,13 @@ const Typography: FC<TypographyProps> = ({
     variant,
 }) => {
     const variantClassNames = {
-        sectionTitle: 'font-sanchez text-5xl capitalize',
+        sectionTitle: 'font-sanchez text-3xl md:text-5xl capitalize',
     };
 
     return (
         <div
             className={clsx(
-                'w-full py-8 relative',
+                'w-full py-4 md:py-8 relative',
                 alignment[align],
                 variantClassNames[variant],
                 variant === 'sectionTitle' && 'highlight',

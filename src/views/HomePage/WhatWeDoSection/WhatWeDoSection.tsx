@@ -35,7 +35,7 @@ const data = [
 const WhatWeDoSection: React.FC = () => {
     return (
         <div className="container mx-auto my-12 pt-12 ">
-            <Typography variant="sectionTitle" className="mb-24">
+            <Typography variant="sectionTitle" className="mb-16 md:mb-24">
                 What We Do
             </Typography>
             {data.map((el, index, arr) => {
@@ -44,7 +44,7 @@ const WhatWeDoSection: React.FC = () => {
                     <ScrollTrigger
                         delay={0}
                         key={index}
-                        className="flex flex-col items-center justify-between md:items-end md:flex-row m-12"
+                        className="flex flex-col items-center justify-between md:items-end md:flex-row md:m-12"
                     >
                         <div
                             className={clsx('flex flex-col mb-12 items-center')}
@@ -62,10 +62,10 @@ const WhatWeDoSection: React.FC = () => {
                                 )}
                             </div>
                             <div className="flex flex-col items-center mt-8 px-8 md:w-4/5 md:items-start">
-                                <div className=" font-axiforma text-2xl font-bold">
+                                <div className=" font-axiforma text-2xl font-bold text-center md:text-left">
                                     {el.title}
                                 </div>
-                                <div className="font-axiforma text-base font-medium mt-4">
+                                <div className="font-axiforma text-base font-medium mt-4 text-center md:text-left">
                                     {el.content}
                                 </div>
                             </div>
@@ -82,11 +82,11 @@ const WhatWeDoSection: React.FC = () => {
                                     />
                                 )}
                             </div>
-                            <div className="flex flex-col items-center mt-8 px-8 md:w-4/5 md:items-start">
-                                <div className="font-axiforma  text-2xl font-bold">
+                            <div className="flex flex-col items-center mt-8 px-8 md:w-4/5 md:items-start ">
+                                <div className="font-axiforma  text-2xl font-bold text-center md:text-left">
                                     {arr[index + 1].title}
                                 </div>
-                                <div className="font-axiforma  text-base font-medium mt-4">
+                                <div className="font-axiforma  text-base font-medium mt-4 text-center md:text-left">
                                     {arr[index + 1].content}
                                 </div>
                             </div>
