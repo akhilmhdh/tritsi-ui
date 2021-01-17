@@ -6,6 +6,26 @@ import {
 } from 'components/icons';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 
+const FooterIcons = [
+    {
+        href: 'https://www.instagram.com/teamtritsi/',
+        icon: <InstagramCircle className="mr-5" />,
+    },
+    {
+        href: 'https://twitter.com/TTritsi',
+        icon: <AiFillTwitterCircle size={32} className="mr-5" />,
+    },
+    {
+        href: 'https://www.linkedin.com/company/tritsi',
+        icon: <LinkedinCircle className="mr-5" />,
+    },
+    {
+        href: '#',
+        icon: <YoutubeCircle />,
+        hidden: true,
+    },
+];
+
 const Footer = (): JSX.Element => {
     return (
         <Container>
@@ -17,30 +37,19 @@ const Footer = (): JSX.Element => {
                     </span>
                 </div>
                 <div className="flex justify-end">
-                    <a
-                        href="https://www.instagram.com/teamtritsi/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <InstagramCircle className="mr-5" />
-                    </a>
-                    <a
-                        href="https://twitter.com/TTritsi"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <AiFillTwitterCircle size={32} className="mr-5" />
-                    </a>
-                    {false && (
-                        <a>
-                            <LinkedinCircle className="mr-5" />
-                        </a>
-                    )}
-                    {false && (
-                        <a>
-                            <YoutubeCircle />
-                        </a>
-                    )}
+                    {FooterIcons.map(({ hidden, href, icon }, key) => {
+                        if (hidden) return null;
+                        return (
+                            <a
+                                href={href}
+                                target="_blank"
+                                rel="noreferrer"
+                                key={`footer-icon-${key}`}
+                            >
+                                {icon}
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </Container>
