@@ -43,7 +43,7 @@ const FactCard: FC<FactCardProps> = ({ cardNumber, title, subtitle, link }) => {
                     <div className="font-sanchez text-xl sm:text-2xl uppercase text-right tracking-wider whitespace-pre-wrap relative">
                         {title}
                     </div>
-                    <div className="w-1/2 text-9xl font-axiforma empty-text absolute bottom-0 left-0">
+                    <div className="w-1/2 text-8xl md:text-9xl font-axiforma empty-text absolute bottom-8 md:bottom-0 left-0 leading-3">
                         {cardNumber}
                     </div>
                 </div>
