@@ -52,7 +52,7 @@ export const Wizard = <
 
     useEffect(() => {
         if (stepNumber in snapShot) {
-            hookFormMethods.reset(snapShot[stepNumber]);
+            hookFormMethods.reset(snapShot.current[stepNumber]);
         } else {
             hookFormMethods.reset(initialValues as any);
         }
